@@ -185,3 +185,75 @@ button:hover{
   }
 
 }
+/* INTRO */
+
+.intro{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(
+    to bottom,
+    #edf3e8,
+    #f8e5ea
+  );
+}
+
+.cross-top{
+  width:14px;
+  height:110px;
+  background:silver;
+  position:relative;
+  border-radius:10px;
+  margin-bottom:40px;
+
+  box-shadow:0 0 20px rgba(192,192,192,.5);
+}
+
+.cross-top::before{
+  content:'';
+
+  position:absolute;
+
+  width:60px;
+  height:14px;
+
+  background:silver;
+
+  left:-23px;
+  top:30px;
+
+  border-radius:10px;
+}
+
+.montecarlo-title{
+
+  font-family:'MonteCarlo', cursive;
+
+  font-size:4rem;
+
+  color:#7d8f7a;
+
+  text-align:center;
+
+  line-height:1.3;
+
+  padding:0 20px;
+
+  animation:fadeUp 2s ease;
+}
+
+@keyframes fadeUp{
+
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
